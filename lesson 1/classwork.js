@@ -29,19 +29,19 @@ let book1 = {
             name: 'asdas',
             pages: 256,
             genre: 'filantrop',
-            author: 'terminator',
+            author: 'terminator'
         },
         {
             name: 'acjklg',
             pages: 458,
             genre: 'criminal',
-            author: 'Pol Uoker',
+            author: 'Pol Uoker'
         },
         {
             name: 'lghir',
             pages: 851,
             genre: 'comedy',
-            author: 'gdwmho',
+            author: 'gdwmho'
         }
     ];
     console.log(book2[0]);
@@ -60,7 +60,8 @@ let s = height * width;
 
 let heightC = 10;
 let dC = 4;
-let v = heightC * dC;
+let v = 3.14 * dC * heightC;
+
 
 // 7. У прямокутного трикутника дві сторони n (зі значенням 3) та m (зі значенням 4).
 // Знайдіть гіпотенузу k за теоремою Піфагора (потрібно використовувати функцію Math.pow (число, ступінь) або оператор зведення в ступінь **).
