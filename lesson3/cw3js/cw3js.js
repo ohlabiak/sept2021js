@@ -52,7 +52,7 @@ for (i = 0; i < numArr.length; i ++) {
 
 // 7. замінити кожне число кратне 3 на слово "okten"
 
-for (let i = 0; i < numArr.length; i++){
+for (i = 0; i < numArr.length; i++){
      if (numArr[i]%3 === 0){
          numArr[i] = "okten";
         }
@@ -65,38 +65,54 @@ for (i = numArrBack.length-1; i >= 0; i--){
 
 // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
 
-// i = 0;
-// while (i < numArr.length) {
-//     console.log(numArr[i]);
-//     i++;
-// };
+i = numArrBack.length - 1;
+while (i >= 0) {
+    console.log(numArrBack[i])
+    i--
+}
 
 // 2
 for (i = numArrBack.length; i >= 0; i--) {
     console.log(numArrBack[i]);
 };
 
-// 3
+ // 3
+i = numArrBack.length - 1;
+while (i >= 0) {
+    if (i%2  !== 0) {
+         console.log(numArrBack[i]);
+     }
+     i--
+ };
 
 // 4
-for (i = numArr.length; i >= 0; i--) {
+
+for (i = numArrBack.length; i >= 0; i--) {
     if (i%2  !== 0) {
-        console.log(numArr[i]);
+        console.log(numArrBack[i]);
     }
 };
 
-// 5
+//5
+
+i = numArrBack.length - 1;
+    while (i >= 0) {
+    if (i%2  === 0) {
+        console.log(numArrBack[i]);
+     }
+     i--
+ };
 
 //6
-for (i = numArr.length; i <= 0; i--) {
+for (i = numArrBack.length; i <= 0; i--) {
     if (i%2  === 0) {
-        console.log(numArr[i]);
+        console.log(numArrBack[i]);
     }
 };
 
 // 7
-for (i = numArr.length; let i = 0; i--){
-    if (numArr[i]%3 === 0){
-        numArr[i] = "okten";
-    }
-};
+ for (i = numArrBack.length; i <= 0; i--) {
+     if (numArrBack[i]%3 === 0){
+         numArrBack[i] = "okten";
+     }
+ };
