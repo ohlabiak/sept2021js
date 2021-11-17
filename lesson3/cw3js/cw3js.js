@@ -26,7 +26,7 @@ while (i < numArr.length) {
 
 // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
 
-for (i = 0; i < numArr.length; i ++) {
+for (let i = 0; i < numArr.length; i ++) {
     if (i%2  !== 0) {
     console.log(numArr[i]);
 }
@@ -44,7 +44,7 @@ while (i < numArr.length) {
 
 // 6. перебрати циклом for та вивести  числа тільки парні  значення
 
-for (i = 0; i < numArr.length; i ++) {
+for (let i = 0; i < numArr.length; i ++) {
     if (i%2  === 0) {
         console.log(numArr[i]);
     }
@@ -52,14 +52,15 @@ for (i = 0; i < numArr.length; i ++) {
 
 // 7. замінити кожне число кратне 3 на слово "okten"
 
-for (i = 0; i < numArr.length; i++){
+for (let i = 0; i < numArr.length; i++){
      if (numArr[i]%3 === 0){
          numArr[i] = "okten";
         }
  };
 // 8. вивести масив в зворотньому порядку.
 let numArrBack = [2,17,13,6,22,31,45,66,100,-18];
-for (i = numArrBack.length-1; i >= 0; i--){
+
+for (let i = numArrBack.length-1; i >= 0; i--){
      console.log(numArrBack[i]);
  };
 
@@ -72,7 +73,7 @@ while (i >= 0) {
 }
 
 // 2
-for (i = numArrBack.length; i >= 0; i--) {
+for (let i = numArrBack.length - 1; i >= 0; i--) {
     console.log(numArrBack[i]);
 };
 
@@ -87,7 +88,7 @@ while (i >= 0) {
 
 // 4
 
-for (i = numArrBack.length; i >= 0; i--) {
+for (let i = numArrBack.length - 1; i >= 0; i--) {
     if (i%2  !== 0) {
         console.log(numArrBack[i]);
     }
@@ -104,15 +105,17 @@ i = numArrBack.length - 1;
  };
 
 //6
-for (i = numArrBack.length; i <= 0; i--) {
+for (let i = numArrBack.length - 1; i >= 0; i--) {
     if (i%2  === 0) {
         console.log(numArrBack[i]);
     }
 };
 
 // 7
- for (i = numArrBack.length; i <= 0; i--) {
+ for (let i = numArrBack.length - 1; i >= 0; i--) {
      if (numArrBack[i]%3 === 0){
          numArrBack[i] = "okten";
+         console.log(numArrBack);
      }
+
  };
