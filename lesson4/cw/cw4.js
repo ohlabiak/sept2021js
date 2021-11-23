@@ -115,8 +115,11 @@ function minmax (nums) {
 
     function reverse(arr) {
     let arr = [];
-    for (let i = arr.length - 1, ri = 0; i >= 0; i--, ri++) {
+    for (let i = arr.length - 1, ri = 0;  ri < arr.length i >= 0; i--, ri++) {
         newArr[ri] = newArr[i];
+        newArr[i] = a[i];
      }
     return newArr;
 }
+
+
