@@ -134,4 +134,4 @@ let minmax = (nums) => {
         return newArr;
     }
 
-    // reverse(arr)
+    console.log(reverse([2, 3, 4]));

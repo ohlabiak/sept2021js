@@ -41,7 +41,7 @@ function biggestnumber (maxarr) {
     return maxarr;
 };
 
-//
+//biggestnumber(maxarr)
 
 // - створити функцію яка повертає найменьше число з масиву
 
@@ -54,7 +54,7 @@ function smoller (arrmin) {
         }
     } return arrmin;
 }
-
+//smoller(arrmin)
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 
 let sumarr = [1, 2, 5, 10, 20];
@@ -66,6 +66,7 @@ let sumarr = [1, 2, 5, 10, 20];
         return sum;
     }
 
+//    sumelement(sumarr)
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
 
 let sumarr1 = [5, 67, 92, 11, 64, 91, 38, -44];
@@ -76,7 +77,7 @@ let sumarr1 = [5, 67, 92, 11, 64, 91, 38, -44];
         }
         return sum/sumarr1.length
     }
-
+//middle(sumarr1)
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
 
 function minmax (nums) {
@@ -92,7 +93,7 @@ function minmax (nums) {
         console.log(max);
          return min;
     }
-
+    // minmax(12, 45, -37, 84, 39)
 // - створити функцію яка заповнює масив рандомними числами
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
 
@@ -102,7 +103,7 @@ function minmax (nums) {
     }
     return arr;
 };
-
+//random()
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
 
 
@@ -112,16 +113,16 @@ function minmax (nums) {
         }
         return arr;
     };
-
+// randomlimit(10, 50)
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 
     function reverse(arr) {
         let newarr = [];
         for (let i = arr.length - 1, ri = 0; ri < arr.length, i >= 0; i--, ri++) {
             newArr[ri] = newArr[i];
-            newArr[i] = a[i];
+            newArr[i] = newArr[i];
         }
         return newArr;
     }
 
-
+    console.log(reverse([2, 3, 4]));
