@@ -41,6 +41,8 @@ function biggestnumber (maxarr) {
     return maxarr;
 };
 
+//
+
 // - створити функцію яка повертає найменьше число з масиву
 
 let arrmin = [65, 54, 1, 37, 49, 49324, 123854];
