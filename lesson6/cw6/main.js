@@ -49,35 +49,31 @@ console.log(arrayr);
 // sortNums('descending') // [21,11,3]
 
 
- let sortNums = (arr, direction) => {
- //     if (direction === 'asc') return arr.sort((a, b) => a - b);
- //     if (direction === 'desc') return arr.sort((a, b) => b - a);
- // };
- // console.log(sortNums([1, 56, 9, -20, 2345, 34, 98, 5], 'desc') );
+ let sortNums = (nums, direction) => {
+     if (direction === 'asc') return nums.sort((a, b) => a - b);
+     if (direction === 'desc') return nums.sort((a, b) => b - a);
+ };
+ console.log(sortNums([11, 21, 3], 'desc') );
 
-
-
-// let sortNums = (nums, direction) => {
-//     let nums = [11, 21, 3];
-//     if (direction === 'ascending') {
-//         nums.sort((a, b) => a - b);
-//     } else if (direction === 'descending') {
-//         nums.sort((a, b) => b - a);
-//     }
-// }
-//  console.log(sortNums(nums, descending));
 
 // - є масив
-// let coursesAndDurationArray = [
-//     {title: 'JavaScript Complex', monthDuration: 5},
-//     {title: 'Java Complex', monthDuration: 6},
-//     {title: 'Python Complex', monthDuration: 6},
-//     {title: 'QA Complex', monthDuration: 4},
-//     {title: 'FullStack', monthDuration: 7},
-//     {title: 'Frontend', monthDuration: 4}
-// ];
+let coursesAndDurationArray = [
+    {title: 'JavaScript Complex', monthDuration: 5},
+    {title: 'Java Complex', monthDuration: 6},
+    {title: 'Python Complex', monthDuration: 6},
+    {title: 'QA Complex', monthDuration: 4},
+    {title: 'FullStack', monthDuration: 7},
+    {title: 'Frontend', monthDuration: 4}
+];
 // -- відсортувати його за спаданням за monthDuration
+
+ let newSort = coursesAndDurationArray.sort((a, b) => b.monthDuration - a.monthDuration);
+ console.log(newSort);
+
 // -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
-//
-// - Напишите функцию cutString(str, n), которая делит строку на подстроки, состоящие из n символов.
-// document.writeln(cutString('наслаждение',3)) // [нас,лаж,ден,ие]
+
+ let filter = coursesAndDurationArray.filter((value) => {
+     return value.monthDuration > 5;
+ })
+ console.log(filter);
+
