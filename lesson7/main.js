@@ -25,8 +25,7 @@ function User(name,  id, email, surname, phone) {
 
 // - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
 
-let filterUser = let userarr;
-filterUser.filter((value => value % 2 === 0))
+let filterUser = userarr.filter(value => value.id % 2 === 0);
 console.log(filterUser);
 
 // - Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
