@@ -49,14 +49,14 @@ class Client {
 // створити пустий масив, наповнити його 10 об'єктами Client
 
 let Clients = [
-    new Client(1, 'vova', 'bolt', 'gfd@gmail.com', 380674567896, [bla, blabla, blablabla, dfg, gkgigo]);
-    new Client(3, 'petya', 'ben', 'gfd@gmail.com', 380674567896, [poker, scart, socs, books, pen]);
-    new Client(4, 'ivan', 'gor', 'gfd@gmail.com', 380674567896, [sircle, cicle, bike]);
-    new Client(6, 'stepan', 'giga', 'gfd@gmail.com', 380674567896, [car, flat, dodge, rom, gkgigo, beer]);
-    new Client(7, 'erik', 'marvil', 'gfd@gmail.com', 380674567896, [pub, volvo]);
-    new Client(5, 'ron', 'black', 'gfd@gmail.com', 380674567896, [bla, dfg, gkgigo]);
-    new Client(2, 'john', 'golt', 'gfd@gmail.com', 380674567896, [blablabla]);
-    new Client(9, 'vasya', 'pypkin', 'gfd@gmail.com', 380674567896, [bla, blabla, blablabla, dfg, gkgigo]);
+    new Client(1, 'vova', 'bolt', 'gfd@gmail.com', 380674567896, [bla, blabla, blablabla, dfg, gkgigo]),
+    new Client(3, 'petya', 'ben', 'gfd@gmail.com', 380674567896, [poker, scart, socs, books, pen]),
+    new Client(4, 'ivan', 'gor', 'gfd@gmail.com', 380674567896, [sircle, cicle, bike]),
+    new Client(6, 'stepan', 'giga', 'gfd@gmail.com', 380674567896, [car, flat, dodge, rom, gkgigo, beer]),
+    new Client(7, 'erik', 'marvil', 'gfd@gmail.com', 380674567896, [pub, volvo]),
+    new Client(5, 'ron', 'black', 'gfd@gmail.com', 380674567896, [bla, dfg, gkgigo]),
+    new Client(2, 'john', 'golt', 'gfd@gmail.com', 380674567896, [blablabla]),
+    new Client(9, 'vasya', 'pypkin', 'gfd@gmail.com', 380674567896, [bla, blabla, blablabla, dfg, gkgigo]),
     ];
 
 // - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
