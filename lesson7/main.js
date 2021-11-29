@@ -10,23 +10,24 @@ function User(name,  id, email, surname, phone) {
 }
 
     let userarr = [
-    new User('vasya', 30, 'gfd@gmail.com', 'pypkin', 380674567896);
-    new User('vova', 31, 'kokr@gmail.com', 'bolt', 380695412354);
-    new User('petro', 32, 'cvbm@gmail.com', 'gor', 380321569874);
-    new User('ivan', 37, 'pgk@gmail.com', 'ben', 380645987412);
-    new User('endry', 34, 'folc@gmail.com', 'bim', 380691234567);
-    new User('kolya', 38, 'wer@gmail.com', 'bom', 380144567891);
-    new User('erik', 33, 'vfd@gmail.com', 'marvil', 380793278962);
-    new User('ron', 41, 'ldf@gmail.com', 'golt', 380663216548);
-    new User('john', 54, 'zas@gmail.com', 'black', 380780258963);
-    new User('dagni', 27, 'btn@gmail.com', 'taggart', 380987894563);
-    ];
+    new User('vasya', 30, 'gfd@gmail.com', 'pypkin', 380674567896),
+    new User('vova', 31, 'kokr@gmail.com', 'bolt', 380695412354),
+    new User('petro', 32, 'cvbm@gmail.com', 'gor', 380321569874),
+    new User('ivan', 37, 'pgk@gmail.com', 'ben', 380645987412),
+    new User('endry', 34, 'folc@gmail.com', 'bim', 380691234567),
+    new User('kolya', 38, 'wer@gmail.com', 'bom', 380144567891),
+    new User('erik', 33, 'vfd@gmail.com', 'marvil', 380793278962),
+    new User('ron', 41, 'ldf@gmail.com', 'golt', 380663216548),
+    new User('john', 54, 'zas@gmail.com', 'black', 380780258963),
+    new User('dagni', 27, 'btn@gmail.com', 'taggart', 380987894563),
+];
     console.log(userarr);
 
 // - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
 
-let filter = let userarr.filter((value => value % 2 === 0));
-console.log(filter);
+let filterUser = let userarr;
+filterUser.filter((value => value % 2 === 0))
+console.log(filterUser);
 
 // - Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
 
