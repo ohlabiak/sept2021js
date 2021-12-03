@@ -6,16 +6,14 @@
 // - клонувати його повністю, та додати клон в body.
 
 let div = document.createElement('div');
-div.classList.add('wrap');
-div.classList.add('collapse');
-div.classList.add('alpha');
-div.classList.add('beta');
+div.classList.add('wrap', 'collapse', 'alpha', 'beta');
 div.style.background = 'blue';
 div.style.color = 'red';
 div.style.fontSize = '22px';
 document.body.appendChild(div);
 let clonNode = div.cloneNode(true);
-document.body.appendChild(div.cloneNode(true));
+document.body.appendChild(clonNode);
+
 
 // - Є масив
 let coursesAndDurationArray = [
