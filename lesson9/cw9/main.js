@@ -1,4 +1,4 @@
-- є масив
+// - є масив
 let simpsons = [
     {
         name: 'Bart',
@@ -36,13 +36,48 @@ let simpsons = [
         photo: 'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'
     },
 ];
-Проітерувати його, створиши для кожного елементу масиву <div class='member'>.
+// Проітерувати його, створиши для кожного елементу масиву <div class='member'>.
 
+for(let item of simpsons) {
+   let div = document.createElement('div');
+    div.classList.add('member');
+    div.innerText = `${item.name} ${item.surname} ${item.age} ${item.info} ${item.photo}`;
+    document.body.appendChild(div);
+}
 
-- взяти попередній масив з сімпсонами.
-    Проітерувати його, створиши для кожного елементу масиву <div class='member'>. Для кожної властивості елементу створити окремий блок, та помістити його у div.member
+ // - взяти попередній масив з сімпсонами.
+//     Проітерувати його, створиши для кожного елементу масиву <div class='member'>.
+// Для кожної властивості елементу створити окремий блок, та помістити його у div.member
 
-- Є масив
+for(let item of simpsons) {
+    let div = document.createElement('div');
+    div.classList.add('member');
+
+    let itemName = document.createElement('div');
+    itemName.innerText = item.name;
+
+    let surName = document.createElement('div');
+    surName.innerText = item.surname;
+
+    let age = document.createElement('div');
+    age.innerText = item.age;
+
+    let info = document.createElement('p');
+    info.innerText = item.info;
+
+    let photo = document.createElement('img');
+    photo.src = item.photo;
+
+    div.appendChild(itemName);
+    div.appendChild(surName);
+    div.appendChild(age);
+    div.appendChild(info);
+    div.appendChild(photo);
+    document.body.appendChild(div);
+
+}
+
+// - Є масив
 let coursesArray = [
     {
         title: 'JavaScript Complex',
@@ -112,5 +147,39 @@ let coursesArray = [
         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
     }
 ];
-Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
-Приклад структири знаходиться у файлі example.png
+// Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей,
+// для властивості modules зробити список з елементами
+// Приклад структири знаходиться у файлі example.png
+
+
+for (const course of coursesArray) {
+
+    let courseElement = document.createElement('div');
+    let titleElement = document.createElement('h2');
+    titleElement.innerText = course.title;
+
+
+    let monthDurationElement = document.createElement('div');
+    monthDurationElement.innerText = course.monthDuration;
+    let hourDurationElement = document.createElement('div');
+    hourDurationElement.innerText = course.hourDuration;
+
+    let durationDiv = document.createElement('div');
+    durationDiv.append(monthDurationElement, hourDurationElement)
+    durationDiv.style.display = 'flex'
+    monthDurationElement.style.width = '25%'
+    monthDurationElement.style.width = '75%'
+
+    let modulesElement = document.createElement('ul');
+
+    for (const moduleItem of course.modules) {
+        let module = document.createElement('li');
+        module.innerText = moduleItem;
+        modulesElement.appendChild(module);
+    }
+
+    courseElement.appendChild(titleElement);
+    courseElement.appendChild(durationDiv);
+    courseElement.appendChild(modulesElement);
+    document.body.appendChild(courseElement);
+}
