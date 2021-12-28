@@ -1,3 +1,8 @@
+// Зробити свій розпорядок дня. // у вас має бути більше 10 асинхронних дій з рандомними затримками.
+// Вам необхідно синхронізувати всі свої дії за допомогою промісів та async await (код має бути написаний окремо)
+//затримка має бути не в порядку зростання, а будь яка. При тому ваші дії мають бути синхронізовані.
+//
+
 // function wakeup (iswakeup, callback) {
 //     setTimeout(() => {
 //         if (iswakeup) {
@@ -47,7 +52,7 @@
 //         } else {
 //             console.log('eatVivsyanka');
 //         }
-//     }, 2500)
+//     }, 2300)
 // };
 //
 // function toGetDressed (istoGetDressed) {
@@ -57,7 +62,7 @@
 //         } else {
 //             console.log('findclothes');
 //         }
-//     }, 3000)
+//     }, 2800)
 // };
 //
 // function takeOutTheGarbadge (istakeOutTheGarbadge) {
@@ -87,7 +92,7 @@
 // toGetDressed(true);
 // takeOutTheGarbadge('garbadge');
 // dontMissBus();
-//
+
 
 // promise
 
@@ -177,8 +182,8 @@
 //         }, 400)
 //     })
 // };
-//
-//
+
+
 // wakeup(true)
 //     .then(morning => {
 //         console.log(morning);
@@ -223,6 +228,29 @@
 // .catch(reason => {
 //     console.log('errror', reason)
 // })
-//
 
+
+// async function everyMorning() {
+//     const step1 = await wakeup(true);
+//     const step2 = await turnOfAlarm(step1);
+//     const step3 = await cleenTeath(step2);
+//     const step4 = await turnOnTeapot(step3);
+//     const step5 = await cookingBreakfest(step4);
+//     const step6 = await toGetDressed(step5);
+//     const step7 = await takeOutTheGarbadge(step6);
+//     const step8 = await dontMissBus(step7);
+//
+//
+//
+//     console.log(step1, 'step1');
+//     console.log(step2, 'step2');
+//     console.log(step3);
+//     console.log(step4);
+//     console.log(step5);
+//     console.log(step6);
+//     console.log(step7);
+//     console.log(step8);
+// }
+//
+// everyMorning()
 
